@@ -1,0 +1,22 @@
+$priamry_color: #7b1f7b;
+$text-large-size: 32px;
+
+h3 {
+  color: $priamry_color;
+}
+p.content {
+  $text-color: yellow !global;
+  background-color: $priamry_color;
+  padding: 10px;
+  color: white;
+  a {
+    font: {
+      size: $text-large-size;
+    }
+    color: $text-color;
+  }
+}
+span {
+  border-bottom: solid 1px $priamry_color;
+  color: $text-color;
+}

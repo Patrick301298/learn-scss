@@ -1,0 +1,34 @@
+//Basic
+/*
+$primary_color: red;
+$size: 32;
+$text_size: $size * 1px;
+$text_size_string: $size + px;
+h1 {
+  color: $primary_color;
+}
+p {
+  font: {
+    size: $text_size_string;
+  }
+}*/
+//p2
+/*
+$background-url: "../images/";
+div.bg {
+  background-url: $background-url + "div-bg.png";
+}
+p.background {
+  background-url: "../images/p-bg.png";
+}
+*/
+$color: #4286f4;
+$light_color: lighten($color, 15%);
+$darken_color: darken($color, 85%);
+$plus_color: green + red;
+h1,
+p {
+  background-color: $plus_color;
+  padding: 10px;
+  color: yellow;
+}
