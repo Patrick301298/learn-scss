@@ -1,0 +1,19 @@
+// $i: 6;
+// @while $i > 0 {
+//   .item-#{$i} {
+//     width: 2em * $i;
+//     $i: $i - 2;
+//   }
+// }
+$headerElement: h1, h2, p, h4, h5;
+$fontSize: 55px, 50px, 40px, 20px, 10px;
+
+$len: length($headerElement);
+
+$j: 1;
+@while $j < $len + 1 {
+  #{nth($headerElement,$j)} {
+    font-size: #{nth($fontSize, $j)};
+  }
+  $j: $j + 1;
+}

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+body {
+  font-family: "Oswald", sans-serif; }
+
+h1 {
+  font-family: "Oswald", sans-serif; }
+
+h3 {
+  font-family: "Roboto Condensed", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

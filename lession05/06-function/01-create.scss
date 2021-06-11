@@ -1,0 +1,9 @@
+$column: 3;
+$columnWith: 40px;
+$columnMargin: 10px;
+@function setWidth($column, $columnWith, $columnMargin) {
+  @return $columnWith * $column + ($column + 1) * $columnMargin;
+}
+div {
+  width: setWidth($column, $columnWith, $columnMargin);
+}

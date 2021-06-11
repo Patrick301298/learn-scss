@@ -1,0 +1,9 @@
+$str: "abcaaa";
+
+div {
+  @if (str-length($str) >= 5) {
+    background-color: red;
+  } @else {
+    background-color: blue;
+  }
+}

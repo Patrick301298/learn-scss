@@ -1,0 +1,21 @@
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
+$map: (
+  h1: 55px,
+  h2: 50px,
+  h3: 40px,
+  p: 20px,
+  h5: 10px,
+);
+@each $key, $value in $map {
+  #{$key} {
+    font-size: #{$value};
+  }
+}
