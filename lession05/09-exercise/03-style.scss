@@ -1,0 +1,46 @@
+$color-red: #f0682d;
+$color-red-hover: #f16f69;
+$color-blue: #62b0f1;
+$color-blue-hover: #4edaf3;
+$color-yellow: #f4ee29;
+$color-yellow-hover: #f6f868;
+
+%btn {
+  padding: 12px 16px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+$color-btn: (
+  red: (
+    background: $color-red,
+    hover: $color-red-hover,
+  ),
+  blue: (
+    background: $color-blue,
+    hover: $color-blue-hover,
+  ),
+  yellow: (
+    background: $color-yellow,
+    hover: $color-yellow-hover,
+  ),
+);
+@each $btName, $colorMap in $color-btn {
+  .btn-#{ $btName} {
+    @extend %btn;
+    //   background-color: $value;
+  }
+  @each $key, $value in $colorMap {
+    @if $key == "background" {
+      .btn-#{$btName} {
+        background-color: $value;
+      }
+    } @else {
+      .btn-#{$btName}:hover {
+        background-color: $value;
+      }
+    }
+  }
+}

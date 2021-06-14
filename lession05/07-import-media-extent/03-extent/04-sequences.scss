@@ -1,0 +1,9 @@
+#fake-links .link {
+  @extend a;
+}
+a {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}

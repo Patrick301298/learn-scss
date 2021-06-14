@@ -1,0 +1,23 @@
+// 0 -1000
+@media all and (min-width: 1000px) {
+  body {
+    background-color: red;
+  }
+}
+//800-1000
+@media all and (min-width: 800px) and (max-width: 1000px) {
+  body {
+    background-color: yellow;
+  }
+}
+//0-500
+@media all and (min-width: 500px) and (max-width: 800px) {
+  body {
+    background-color: blue;
+  }
+}
+@media all and (orientation: landscape) {
+  body {
+    background-color: pink;
+  }
+}
